@@ -1,0 +1,150 @@
+@black:                                 #000;
+@white:                                 #FFF;
+@light-grey:                            #F1F1F1;
+@medium-grey:                           #C1C1C1;
+@dark-grey:                             #333;
+@blue:                                  #00F;
+@padding:                               20px;
+
+*   {
+    padding:                            0;
+    margin:                             0;
+    border-collapse:                    collapse;
+    list-style:                         none;
+}
+
+header, section, article, aside, address {
+    display:                            block;
+}
+
+.headers(@size:1em, @color:@black){
+    color:                              @color;
+    font-family:                        Minion Pro,
+                                        Georgia,
+                                        Times New Roman,
+                                        Serif;
+    font-size:                          @size;
+    font-weight:                        bold;
+    line-height:                        1.4em;
+}
+
+.paragraphs(@size:0.8em,@color:@black){
+    color:                              @color;
+    font-family:                        Helvetica,
+                                        Arial,
+                                        Sans-serif;
+    font-size:                          @size;
+    line-height:                        1.4em;
+    margin-bottom:                      0.8em;
+}
+
+.lists(@size:0.8em,@color:@black){
+    color:                              @color;
+    font-family:                        Helvetica,
+                                        Arial,
+                                        Sans-serif;
+    font-size:                          @size;
+    line-height:                        1em;
+    margin:                             0 0 0.8em 0;
+}
+
+h1  {
+    margin:                             0 0 24px 0;
+    .headers(4em);
+}
+
+h2  {
+    margin:                             0 0 12px 0;
+    .headers(1.8em);
+}
+
+header h2   {
+    border:                             none;
+    margin:                             0 0 0 0;
+    .headers(1.4em);
+}
+
+h3  {
+    margin:                             0 0 12px 0;
+    .headers(1.4em);
+}
+
+h4  {
+    margin:                             0 0 12px 0;
+    .headers(1em);
+}
+
+p   {
+    .paragraphs();
+}
+
+p.fn    {
+    margin:                             0 0 12px 0;
+    .headers(1em);
+}
+
+p.dates  {
+    color:                              @medium-grey;
+}
+
+li  {
+    .lists();
+}
+
+a   {
+    color:                              @dark-grey;
+    text-decoration:                    none;
+}
+
+address {
+    font-style:                         normal;
+}
+
+#page   {
+    text-align:                         center;
+    padding:                            0;
+    
+    #content    {
+        margin:                         0 auto;
+        text-align:                     left;
+        width:                          100%;
+        
+        header {
+            text-align:                 center;
+            padding:                    @padding;
+        }
+        
+        #left-column    {
+            width:                      100%;
+        }
+        
+        #right-column   {
+            width:                      100%;
+        }
+        
+        section {
+            
+            article {
+                padding:                @padding;
+            }
+        }
+        
+        aside   {
+            &#social    {
+                display:                none;
+            }
+            
+            padding:                    @padding;
+            
+            img {
+                margin:                 0 0 12px 0;
+            }
+            
+            ol  {
+                li  {
+                    display:            inline;
+                    }
+                }
+            }
+        }
+    }
