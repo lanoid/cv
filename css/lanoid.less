@@ -1,3 +1,5 @@
+@import 'lesshat.less';
+
 @black:                         #000;
 @white:                         #FFF;
 @light-grey:                    #F1F1F1;
@@ -158,9 +160,34 @@ body    {
     .bgcolor(@medium-grey);
 }
 
+.grad(@from, @to){
+    .background-image(linear-gradient(to bottom, @from 0%, @to 100%));
+}
+
 #page   {
     text-align:                 center;
     padding:                    12px 0 24px 0;
+    .grad(@medium-grey,@medium-grey);
+    .transition(all 5s ease-in-out);
+    // Thunder
+    &[class^="c2"] {}
+    // Drizzle
+    &[class^="c3"] {}
+    // Rain
+    &[class^="c5"] {}
+    // Snow
+    &[class^="c6"] {}
+    // Atmosphere
+    &[class^="c7"] {}
+    // Clouds
+    &[class^="c8"] {
+        .grad(rgba(255,255,255,1), rgba(142,191,229,1));
+    }
+    // Extreme
+    &[class^="c9"] {}
+    // Additional
+    &[class^="c95"] {}
+    &[class^="c96"] {}
     
     #content    {
         margin:                 0 auto;
