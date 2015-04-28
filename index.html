@@ -11,8 +11,6 @@
     
     <link href="css/lanoid.css" type="text/css" rel="stylesheet" media="screen">
     <link href="css/lanoid-print.css" type="text/css" rel="stylesheet" media="print">
-
-    <script type="text/javascript" src="scripts/microajax.js"></script>
 </head>
 
 <body>
@@ -170,41 +168,15 @@
     </div>
     <script>
         var lanoid = {
-            config : {
-                weatherUrl : '//api.openweathermap.org/data/2.5/weather?',
-                weather : '',
-                lat : 0,
-                lon : 0
-            },
             forEach : Array.prototype.forEach,
             printButtons : document.getElementsByClassName('print'),
             addPrintClick : function (element) {
                 element.addEventListener('click', function () {
                     window.print();
                 });
-            },
-            getWeather : function () {
-                microAjax(lanoid.config.weatherUrl + 'lat=' + lanoid.config.lat + '&lon=' + lanoid.config.lon, function (res) {
-                    lanoid.setColor(JSON.parse(res).weather[0]);
-                });
-            },
-            setColor : function (weather) {
-                console.log(weather);
-                document.getElementById('page').className = 'c' + weather.id;
-            },
-            setLocation : function (position, cb) {
-                lanoid.config.lon = Math.floor(position.coords.longitude);
-                lanoid.config.lat = Math.floor(position.coords.latitude);
-                cb();
-            },
-            getLocation : function (cb) {
-                window.navigator.geolocation.getCurrentPosition(function (position) {
-                    lanoid.setLocation(position, cb)
-                });
             }
         }
         lanoid.forEach.call(lanoid.printButtons, lanoid.addPrintClick);
-        lanoid.getLocation(lanoid.getWeather);
         
     </script>
 </body>
