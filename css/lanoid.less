@@ -157,44 +157,61 @@ address {
 }
 
 body    {
-    .bgcolor(@medium-grey);
-}
-
-.grad(@from, @to){
-    .background-image(linear-gradient(to bottom, @from 0%, @to 100%));
 }
 
 #page   {
+    background-color:           lightblue;
+    background-image:           url(../images/palm_bw.png);
+    background-position:        50% 100%;
+    background-repeat:          no-repeat;
+    background-size:            contain;
     padding:                    12px 0 24px 0;
     text-align:                 center;
     
     #content    {
         margin:                 0 auto;
         text-align:             left;
-        width:                  960px;
+        width:                  90%;
         .inline-spacing;
         
         header {
             text-align:         center;
-            margin:             12px 0 24px 0;
+            margin:             12px auto 24px auto;
             padding:            @padding;
             .bgcolor(@white);
             .inline-reset;
             .shadow;
         }
-        
+
         #column-1    {
-            width:              640px;
+            width:              100%;
             .inline-block;
             .inline-reset;
         }
         
         #column-2   {
-            margin:             0 0 0 20px;
-            width:              300px;
+            margin:             0 0 0 0;
+            width:              100%;
             .inline-block;
             .inline-reset;
         }
+
+        @media screen and (min-width: 520px) {
+            #column-1    {
+                width:              calc(~"60% - 10px");
+                .inline-block;
+                .inline-reset;
+            }
+            
+            #column-2   {
+                margin:             0 0 0 20px;
+                width:              calc(~"40% - 10px");
+                .inline-block;
+                .inline-reset;
+            }    
+        }
+        
+        
         
         section {
             
@@ -214,6 +231,7 @@ body    {
             
             img {
                 margin:         0 0 12px 0;
+                width: 100%;
             }
             
             ol  {
