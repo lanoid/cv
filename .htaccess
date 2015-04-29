@@ -1,0 +1,16 @@
+# Turn on rewrites.
+RewriteEngine on
+
+# Don't apply to URLs that go to existing files or folders.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Only apply to URLs that aren't already under /wp.
+RewriteCond %{REQUEST_URI} !^/lanoid.co.uk
+
+# Rewrite all those to insert /wp.
+RewriteRule ^(.*)$ /lanoid.co.uk/$1
+
+# Redirect the root folder.
+RewriteCond %{HTTP_HOST} ^(www.)?lanoid.co.uk$
+RewriteRule ^(/)?$ lanoid.co.uk/ [L]
