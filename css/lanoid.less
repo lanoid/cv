@@ -1,4 +1,5 @@
 @import 'lesshat.less';
+@import url(//fonts.googleapis.com/css?family=Noto+Sans:400,700|Playfair+Display:900);
 
 @black:                         #000;
 @white:                         #FFF;
@@ -21,21 +22,24 @@ header, section, article, aside, address {
 
 .headers(@size:1em, @color:@black){
     color:                      @color;
-    font-family:                Minion Pro,
+    font-family:                Tienne,
+                                Playfair Display,
                                 Georgia,
                                 Times New Roman,
                                 Serif;
     font-size:                  @size;
-    font-weight:                bold;
+    font-weight:                900;
     line-height:                1.4em;
 }
 
 .paragraphs(@size:0.8em,@color:@black){
     color:                      @color;
-    font-family:                Helvetica,
+    font-family:                Noto Sans,
+                                Helvetica,
                                 Arial,
                                 Sans-serif;
     font-size:                  @size;
+    font-wieght:                400;
     line-height:                1.4em;
     margin-bottom:              0.8em;
 }
@@ -43,10 +47,12 @@ header, section, article, aside, address {
 .lists(@size:0.8em,@color:@black){
     color:                      @color;
     display:                    block;
-    font-family:                Helvetica,
+    font-family:                Noto Sans,
+                                Helvetica,
                                 Arial,
                                 Sans-serif;
     font-size:                  @size;
+    font-wieght:                400;
     line-height:                1em;
     margin:                     0 0 0.8em 0;
 }
@@ -59,12 +65,6 @@ header, section, article, aside, address {
 
 .bgcolor(@color){
     background-color:           @color;
-}
-
-.shadow(@x: 5px, @y: 5px, @blur: 5px, @r: 0, @g: 0, @b: 0, @a: 0.5){
-    -moz-box-shadow:            @x @y @blur rgba(@r,@g,@b,@a);
-    -webkit-box-shadow:         @x @y @blur rgba(@r,@g,@b,@a);
-    box-shadow:                 @x @y @blur rgba(@r,@g,@b,@a);
 }
 
 .border-bottom(@color:@black,@width:1px){
@@ -148,7 +148,7 @@ a   {
     }
     &.print {
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 700;
     }
 }
 
@@ -157,10 +157,10 @@ address {
 }
 
 body    {
+    .background-image(linear-gradient(to bottom, rgba(0, 0, 30, 0.8) 0%, lightblue 50%));
 }
 
 #page   {
-    background-color:           lightblue;
     background-image:           url(../images/palm_bw.png);
     background-position:        50% 100%;
     background-repeat:          no-repeat;
@@ -180,7 +180,7 @@ body    {
             padding:            @padding;
             .bgcolor(@white);
             .inline-reset;
-            .shadow;
+            .box-shadow(2px, 2px, 5px, rgba(0, 0, 30, 0.8));
         }
 
         #column-1    {
@@ -195,45 +195,37 @@ body    {
             .inline-block;
             .inline-reset;
         }
-
         @media screen and (min-width: 520px) {
             #column-1    {
-                width:              calc(~"60% - 10px");
+                width:              calc(~"70% - 10px");
                 .inline-block;
                 .inline-reset;
             }
             
             #column-2   {
                 margin:             0 0 0 20px;
-                width:              calc(~"40% - 10px");
+                width:              calc(~"30% - 10px");
                 .inline-block;
                 .inline-reset;
             }    
         }
-        
-        
-        
         section {
-            
             article {
                 margin:         12px 0 24px 0;
                 padding:        @padding;
                 .bgcolor(@white);
-                .shadow;
+                .box-shadow(2px, 2px, 5px, rgba(0, 0, 30, 0.8));
             }
         }
-        
         aside   {
             margin:             12px 0 24px 0;
             padding:            @padding;
             .bgcolor(@white);
-            .shadow;
-            
+            .box-shadow(2px, 2px, 5px, rgba(0, 0, 30, 0.8));
             img {
                 margin:         0 0 12px 0;
                 width: 100%;
             }
-            
             ol  {
                 li  {
                     ol  {
@@ -242,7 +234,6 @@ body    {
                 }
             }
         }
-        
         footer  {
             margin:             0 0 24px 0;
             padding:            @padding;
