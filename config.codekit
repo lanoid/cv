@@ -20,94 +20,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/bg\/bg_1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 765636,
-		"inputAbbreviatedPath": "\/images\/bg\/bg_1.jpg",
-		"outputAbbreviatedPath": "\/images\/bg\/bg_1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bg\/bg_2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 166360,
-		"inputAbbreviatedPath": "\/images\/bg\/bg_2.jpg",
-		"outputAbbreviatedPath": "\/images\/bg\/bg_2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bg\/bg_3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 278038,
-		"inputAbbreviatedPath": "\/images\/bg\/bg_3.jpg",
-		"outputAbbreviatedPath": "\/images\/bg\/bg_3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bg\/bg_4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 291694,
-		"inputAbbreviatedPath": "\/images\/bg\/bg_4.jpg",
-		"outputAbbreviatedPath": "\/images\/bg\/bg_4.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bg\/bg_5.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 536180,
-		"inputAbbreviatedPath": "\/images\/bg\/bg_5.jpg",
-		"outputAbbreviatedPath": "\/images\/bg\/bg_5.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/bg\/bg_6.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 208685,
-		"inputAbbreviatedPath": "\/images\/bg\/bg_6.jpg",
-		"outputAbbreviatedPath": "\/images\/bg\/bg_6.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/matthew_churros.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 48884,
-		"inputAbbreviatedPath": "\/images\/matthew_churros.jpg",
-		"outputAbbreviatedPath": "\/images\/matthew_churros.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/palm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 358217,
-		"inputAbbreviatedPath": "\/images\/palm.jpg",
-		"outputAbbreviatedPath": "\/images\/palm.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/palm_bw.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -115,28 +27,6 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/images\/palm_bw.png",
 		"outputAbbreviatedPath": "\/images\/palm_bw.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/sketchbook_bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3.21873e+06,
-		"inputAbbreviatedPath": "\/images\/sketchbook_bg.jpg",
-		"outputAbbreviatedPath": "\/images\/sketchbook_bg.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/sketchbook_low_bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 536180,
-		"inputAbbreviatedPath": "\/images\/sketchbook_low_bg.jpg",
-		"outputAbbreviatedPath": "\/images\/sketchbook_low_bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -150,7 +40,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/less\/_lanoid-print.less": {
+	"\/less\/_config.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
 		"disableJavascript": 0,
@@ -158,8 +48,8 @@
 		"ieCompatibility": 1,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/_lanoid-print.less",
-		"outputAbbreviatedPath": "\/css\/_lanoid-print.css",
+		"inputAbbreviatedPath": "\/less\/_config.less",
+		"outputAbbreviatedPath": "\/css\/_config.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 2,
@@ -190,6 +80,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/less\/lanoid-print.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/less\/lanoid-print.less",
+		"outputAbbreviatedPath": "\/css\/lanoid-print.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 2,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/less\/lanoid.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -209,50 +119,6 @@
 		"strictImports": 0,
 		"strictMath": 0,
 		"strictUnits": 0
-		},
-	"\/scripts\/jquery.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/jquery.js",
-		"outputAbbreviatedPath": "\/scripts\/min\/jquery-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/lanoid.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/lanoid.js",
-		"outputAbbreviatedPath": "\/scripts\/min\/lanoid-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/microajax.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/microajax.js",
-		"outputAbbreviatedPath": "\/scripts\/min\/microajax-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
-	"\/scripts\/require.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/scripts\/require.js",
-		"outputAbbreviatedPath": "\/scripts\/min\/require-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
 		}
 	},
 "hooks": [
