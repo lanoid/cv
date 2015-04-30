@@ -1,4 +1,4 @@
-@import 'lesshat.less';
+@import '_lesshat.less';
 @import url(//fonts.googleapis.com/css?family=Noto+Sans:400,700|Playfair+Display:900);
 
 @black:                         #000;
@@ -241,4 +241,8 @@ body    {
             .bgcolor(@white);
         }
     }
+}
+
+@media print {
+    @import '_lanoid-print.less';
 }
