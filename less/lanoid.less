@@ -57,6 +57,7 @@ a   {
     color:                      @dark-grey;
     font-weight:                700;
     text-decoration:            none;
+    transition: color ease-in-out .2s;
     &:hover {
         color:                  @blue;
     }
@@ -67,6 +68,21 @@ a   {
 
 address {
     font-style:                 normal;
+}
+
+.social li {
+    &.fb {
+        .icon ('b', @fbBlue);
+    }
+    &.in {
+        .icon ('j', @inBlue);
+    }
+    &.tw {
+        .icon ('a', @twBlue);
+    }
+    &.gh {
+        .icon ('Q', @ghBlack);
+    }
 }
 
 body    {
@@ -85,28 +101,25 @@ body    {
         margin:                 0 auto;
         text-align:             left;
         width:                  90%;
-        .inline-spacing;
+        .inline-reset;
         
         header {
             text-align:         center;
             margin:             12px auto 24px auto;
             padding:            @padding;
             .bgcolor(@white);
-            .inline-reset;
             .box-shadow(2px, 2px, 5px, rgba(0, 0, 30, 0.8));
         }
 
         .left-column    {
             width:              100%;
             .inline-block;
-            .inline-reset;
         }
         
         .right-column   {
             margin:             0 0 0 0;
             width:              100%;
             .inline-block;
-            .inline-reset;
         }
         @media screen and (min-width: 520px) {
             .left-column    {
@@ -147,7 +160,6 @@ body    {
         footer  {
             margin:             0 0 24px 0;
             padding:            @padding;
-            .inline-reset;
             .bgcolor(@white);
         }
     }

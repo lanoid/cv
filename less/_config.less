@@ -1,5 +1,14 @@
+// LIBRARIES //
+
 @import '_lesshat.less';
+
+// FONTS//
+
 @import url(//fonts.googleapis.com/css?family=Noto+Sans:400,700|Playfair+Display:900);
+@import url(..//fonts/socicon/_socicon.less);
+
+
+// STATICS //
 
 @black:                         #000;
 @white:                         #FFF;
@@ -8,6 +17,13 @@
 @dark-grey:                     #333;
 @blue:                          #00F;
 @padding:                       20px;
+
+@fbBlue:                        #3B5998;
+@inBlue:                        #007BB6;
+@twBlue:                        #00ACED;
+@ghBlack:                       @black;
+
+@defaultFontSize:               16px;
 
 *   {
     padding:                    0;
@@ -19,6 +35,12 @@
 header, section, article, aside, address {
     display:                    block;
 }
+
+body {
+    font-size: @defaultFontSize;
+}
+
+// MIXINS //
 
 .headers(@size:1em, @color:@black){
     color:                      @color;
@@ -78,12 +100,19 @@ header, section, article, aside, address {
     vertical-align:             top;
 }
 
-.inline-spacing(){
-    letter-spacing:             -4px;
-    word-spacing:               -4px;
+.inline-reset(){
+    font-size: 0;
+    & > * {
+        font-size: @defaultFontSize;
+    }
 }
 
-.inline-reset(){
-    letter-spacing:             normal;
-    word-spacing:               normal;
+.icon (@network, @color) {
+    a:before {
+        color: @color;
+        content: '@{network}';
+        font-family: 'socicon';
+        margin-right: .5em;
+        vertical-align: baseline;
+    }
 }
