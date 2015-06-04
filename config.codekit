@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18966",
+"creatorBuild": "19033",
 "files": {
 	"\/css\/lanoid-print.css": {
 		"fileType": 16,
@@ -19,6 +19,26 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/fonts\/socicon\/_socicon.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/fonts\/socicon\/_socicon.less",
+		"outputAbbreviatedPath": "\/fonts\/css\/_socicon.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
 		},
 	"\/images\/palm_bw.png": {
 		"fileType": 32768,
@@ -52,7 +72,7 @@
 		"outputAbbreviatedPath": "\/css\/_config.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 1,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -72,7 +92,7 @@
 		"outputAbbreviatedPath": "\/css\/_lesshat.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 1,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -92,7 +112,7 @@
 		"outputAbbreviatedPath": "\/css\/lanoid-print.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 2,
+		"outputStyle": 1,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -112,27 +132,7 @@
 		"outputAbbreviatedPath": "\/css\/lanoid.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/less\/socicon\/_socicon.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/less\/socicon\/_socicon.less",
-		"outputAbbreviatedPath": "\/less\/css\/_socicon.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 1,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
@@ -153,7 +153,7 @@
 	"iconImageName": "harddrive_orange"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -295,7 +295,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "lanoid.dev",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
@@ -761,7 +761,7 @@
 	"lessCreateSourceMap": 0,
 	"lessDisableJavascript": 0,
 	"lessIeCompatibility": 1,
-	"lessOutputStyle": 2,
+	"lessOutputStyle": 1,
 	"lessRelativeURLS": 0,
 	"lessStrictImports": 0,
 	"lessStrictMath": 0,
@@ -1000,7 +1000,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "\/lanoid"
 	},
 "settingsFileVersion": "2"
 }
