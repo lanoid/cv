@@ -1,0 +1,20 @@
+{
+  "name": "lanoid",
+  "version": "1.0.0",
+  "description": "My CV Website",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanoid/cv.git"
+  },
+  "author": "lanoid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanoid/cv/issues"
+  },
+  "homepage": "https://github.com/lanoid/cv#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5"
+  }
+}
