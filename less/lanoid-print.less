@@ -1,39 +1,39 @@
 @import '_config.less';
 
 *   {
-    padding:                            0;
-    margin:                             0;
-    border-collapse:                    collapse;
-    list-style:                         none;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    list-style: none;
 }
 
 header, section, article, aside, address {
-    display:                            block;
+    display: block;
 }
 
 h1  {
-    margin:                             0 0 24px 0;
+    margin: 0 0 24px 0;
     .headers(4em);
 }
 
 h2  {
-    margin:                             0 0 12px 0;
+    margin: 0 0 12px 0;
     .headers(1.8em);
 }
 
 header h2   {
-    border:                             none;
-    margin:                             0 0 0 0;
+    border: none;
+    margin: 0 0 0 0;
     .headers(1.4em);
 }
 
 h3  {
-    margin:                             0 0 12px 0;
+    margin: 0 0 12px 0;
     .headers(1.4em);
 }
 
 h4  {
-    margin:                             0 0 12px 0;
+    margin: 0 0 12px 0;
     .headers(1em);
 }
 
@@ -42,12 +42,12 @@ p   {
 }
 
 p.fn    {
-    margin:                             0 0 12px 0;
+    margin: 0 0 12px 0;
     .headers(1em);
 }
 
 p.dates  {
-    color:                              @medium-grey;
+    color: @medium-grey;
 }
 
 li  {
@@ -55,57 +55,57 @@ li  {
 }
 
 a   {
-    color:                              @dark-grey;
-    text-decoration:                    none;
+    color: @dark-grey;
+    text-decoration: none;
 }
 
 address {
-    font-style:                         normal;
+    font-style: normal;
 }
 
 #page   {
-    text-align:                         center;
-    padding:                            0;
-    
+    text-align: center;
+    padding: 0;
+
     #content    {
-        margin:                         0 auto;
-        text-align:                     left;
-        width:                          100%;
-        
+        margin: 0 auto;
+        text-align: left;
+        width: 100%;
+
         header {
-            text-align:                 center;
-            padding:                    @padding;
+            text-align: center;
+            padding: @padding;
         }
-        
+
         .left-column    {
-            width:                      100%;
+            width: 100%;
         }
-        
+
         .right-column   {
-            width:                      100%;
+            width: 100%;
         }
-        
+
         section {
             &.preamble,
             article {
-                padding:                @padding;
+                padding: @padding;
             }
         }
-        
+
         aside   {
             &#social    {
-                display:                none;
+                display: none;
             }
-            
-            padding:                    @padding;
-            
+
+            padding: @padding;
+
             img {
-                margin:                 0 0 12px 0;
+                margin: 0 0 12px 0;
             }
-            
+
             ol  {
                 li  {
-                    display:            inline;
+                    display: inline;
                 }
             }
         }

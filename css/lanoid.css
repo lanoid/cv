@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Noto+Sans:400,700|Playfair+Display:900);
+@import url(//fonts.googleapis.com/css?family=Noto+Sans:400,700|Libre+Baskerville:700);
 @font-face {
   font-family: 'socicon';
   src: url('/fonts/socicon/socicon-webfont.eot');
@@ -26,13 +26,9 @@ body {
 h1 {
   margin: 0 0 24px 0;
   color: #000;
-  font-family: Tienne,
-                                Playfair Display,
-                                Georgia,
-                                Times New Roman,
-                                Serif;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   font-size: 3em;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
   border: solid #F1F1F1;
   border-width: 0 0 1px 0;
@@ -40,26 +36,18 @@ h1 {
 @media screen and (min-width: 520px) {
   h1 {
     color: #000;
-    font-family: Tienne,
-                                Playfair Display,
-                                Georgia,
-                                Times New Roman,
-                                Serif;
+    font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
     font-size: 4em;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.4em;
   }
 }
 h2 {
   margin: 0 0 12px 0;
   color: #000;
-  font-family: Tienne,
-                                Playfair Display,
-                                Georgia,
-                                Times New Roman,
-                                Serif;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   font-size: 1.8em;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
   border: solid #F1F1F1;
   border-width: 0 0 1px 0;
@@ -68,25 +56,17 @@ header h2 {
   border: none;
   margin: 0 0 0 0;
   color: #000;
-  font-family: Tienne,
-                                Playfair Display,
-                                Georgia,
-                                Times New Roman,
-                                Serif;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   font-size: 1.4em;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
 }
 h3 {
   margin: 0 0 12px 0;
   color: #000;
-  font-family: Tienne,
-                                Playfair Display,
-                                Georgia,
-                                Times New Roman,
-                                Serif;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   font-size: 1.4em;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
   border: solid #F1F1F1;
   border-width: 0 0 1px 0;
@@ -94,18 +74,14 @@ h3 {
 h4 {
   margin: 0 0 12px 0;
   color: #000;
-  font-family: Tienne,
-                                Playfair Display,
-                                Georgia,
-                                Times New Roman,
-                                Serif;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   font-size: 1em;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
 }
 p {
   color: #000;
-  font-family: Noto Sans, Helvetica, Arial, Sans-serif;
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
   font-size: 0.8em;
   font-wieght: 400;
   line-height: 1.4em;
@@ -114,13 +90,9 @@ p {
 p.fn {
   margin: 0 0 12px 0;
   color: #000;
-  font-family: Tienne,
-                                Playfair Display,
-                                Georgia,
-                                Times New Roman,
-                                Serif;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   font-size: 1em;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
 }
 p.dates {
@@ -128,19 +100,15 @@ p.dates {
 }
 p.telephone {
   color: #000;
-  font-family: Tienne,
-                                Playfair Display,
-                                Georgia,
-                                Times New Roman,
-                                Serif;
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   font-size: 1em;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.4em;
 }
 li {
   color: #000;
   display: block;
-  font-family: Noto Sans, Helvetica, Arial, Sans-serif;
+  font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
   font-size: 0.8em;
   font-wieght: 400;
   line-height: 1em;
