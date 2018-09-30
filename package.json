@@ -14,7 +14,11 @@
   },
   "homepage": "https://github.com/lanoid/cv#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-less": "^3.0.5"
+    "browser-sync": "^2.24.7",
+    "gulp": "^4.0.0",
+    "gulp-less": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-copy": "^4.0.0"
   }
 }
