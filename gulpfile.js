@@ -8,7 +8,7 @@ const paths = {
   lessFiles: 'src/less/*.less',
   lessBuildFiles: 'src/less/_*.less',
   serve: 'serve/',
-  files: ['src/index.html', 'src/css/*.css', 'src/fonts/socicon/socicon-webfont.*', 'src/images/*', '!serve/']
+  files: ['src/index.html', 'src/css/*.css', 'src/fonts/socicon/socicon-webfont.*', 'src/images/*', 'src/favicon.*', '!serve/']
 }
 
 function styles() {
