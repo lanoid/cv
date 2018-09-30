@@ -8,7 +8,7 @@ const paths = {
   lessFiles: 'less/*.less',
   lessBuildFiles: 'less/_*.less',
   serve: 'serve/',
-  files: ['index.html', 'css/*.css', 'fonts/socicon/socicon-webfont.*']
+  files: ['index.html', 'css/*.css', 'fonts/socicon/socicon-webfont.*', '!serve/']
 }
 
 function styles() {
@@ -26,8 +26,7 @@ function watch() {
 
 function build() {
   return gulp.src(paths.files)
-    .pipe(gulpCopy(paths.serve))
-    .pipe(gulp.dest(paths.serve));
+    .pipe(gulpCopy(paths.serve));
 }
 
 function cssReload(done) {
