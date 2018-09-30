@@ -2,13 +2,13 @@
   font-family: 'Gentium Book Basic';
   font-style: normal;
   font-weight: 400;
-  src: local('Gentium Book Basic'), local('GentiumBookBasic'), url(http://fonts.gstatic.com/s/gentiumbookbasic/v8/pe0zMJCbPYBVokB1LHA9bbyaQb8ZGjc4ULF_.ttf) format('truetype');
+  src: local('Gentium Book Basic'), local('GentiumBookBasic'), url(https://fonts.gstatic.com/s/gentiumbookbasic/v8/pe0zMJCbPYBVokB1LHA9bbyaQb8ZGjc4ULF_.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Prata';
   font-style: normal;
   font-weight: 400;
-  src: local('Prata Regular'), local('Prata-Regular'), url(http://fonts.gstatic.com/s/prata/v8/6xKhdSpbNNCT-sWPCms.ttf) format('truetype');
+  src: local('Prata Regular'), local('Prata-Regular'), url(https://fonts.gstatic.com/s/prata/v8/6xKhdSpbNNCT-sWPCms.ttf) format('truetype');
 }
 @font-face {
   font-family: 'socicon';
