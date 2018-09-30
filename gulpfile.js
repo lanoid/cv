@@ -17,7 +17,7 @@ function styles() {
       paths: [path.join(__dirname, '.', 'fonts/socicon')],
       javascriptEnabled: true
     }))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('src/css'));
 }
 
 function watch() {
