@@ -5,10 +5,10 @@ const browserSync = require('browser-sync').create();
 const path = require('path');
 
 const paths = {
-  lessFiles: 'less/*.less',
-  lessBuildFiles: 'less/_*.less',
+  lessFiles: 'src/less/*.less',
+  lessBuildFiles: 'src/less/_*.less',
   serve: 'serve/',
-  files: ['index.html', 'css/*.css', 'fonts/socicon/socicon-webfont.*', '!serve/']
+  files: ['src/index.html', 'src/css/*.css', 'src/fonts/socicon/socicon-webfont.*', 'src/images/*', '!serve/']
 }
 
 function styles() {
@@ -26,7 +26,7 @@ function watch() {
 
 function build() {
   return gulp.src(paths.files)
-    .pipe(gulpCopy(paths.serve));
+    .pipe(gulpCopy(paths.serve, { prefix: 1 }));
 }
 
 function cssReload(done) {
