@@ -7,17 +7,17 @@ const path = require('path');
 const paths = {
   lessFiles: 'src/less/*.less',
   lessBuildFiles: 'src/less/_*.less',
-  serve: 'serve/',
-  files: ['src/index.html', 'src/css/*.css', 'src/fonts/socicon/socicon-webfont.*', 'src/images/*', 'src/favicon.*', '!serve/']
+  serve: './serve/',
+  files: ['src/index.html', './assets/fonts/socicon/socicon-webfont.*', './assets/images/*', './assets/images/favicon.*', '!serve/']
 }
 
 function styles() {
   return gulp.src([paths.lessFiles, `!${paths.lessBuildFiles}`])
     .pipe(gulpLess({
-      paths: [path.join(__dirname, '.', 'fonts/socicon')],
+      paths: [path.join(__dirname, paths.lessFiles, './assets/fonts/socicon')],
       javascriptEnabled: true
     }))
-    .pipe(gulp.dest('src/css'));
+    .pipe(gulp.dest(`${paths.serve}/css`));
 }
 
 function watch() {
