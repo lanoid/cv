@@ -46,7 +46,8 @@ function dev() {
     notify: false
   });
 
-  gulp.watch(paths.lessFiles, gulp.series(styles, build, cssReload));
+  gulp.watch(paths.files, gulp.series(build));
+  gulp.watch(paths.lessFiles, gulp.series(styles, cssReload));
   gulp.watch(paths.files).on('change', browserSync.reload);
 }
 
@@ -56,4 +57,4 @@ gulp.task('build', build);
 gulp.task('dev', dev);
 gulp.task('cssReload', cssReload);
 
-gulp.task('default', gulp.series(watch));
+gulp.task('default', watch);
