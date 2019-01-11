@@ -1,3 +1,6 @@
-Curriculum Vitae Site for Matthew "Lanoid" Lane
+h1. Curriculum Vitae Site for Matthew "Lanoid" Lane
 
-[Auto Deployed to Netlify](https://lanoid.netlify.com)
+[Deployed on push to Master](https://www.lanoid.co.uk)
+
+`gulp dev` - for local  development
+`gulp build` - to deploy the serve folder
