@@ -1,4 +1,4 @@
-h1. Curriculum Vitae Site for Matthew "Lanoid" Lane
+# Curriculum Vitae Site for Matthew "Lanoid" Lane
 
 [Deployed on push to Master](https://www.lanoid.co.uk)
 
