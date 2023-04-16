@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/lanoid/cv#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^2.29.1",
     "gulp": "^4.0.2",
     "gulp-less": "^5.0.0",
     "webpack": "^5.73.0",
